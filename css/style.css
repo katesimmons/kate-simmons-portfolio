@@ -430,13 +430,32 @@ th {
 
 */
 
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
 body {
 	background-color: #c8c2bc;
+	-webkit-font-smoothing: antialiased;
+
+	font-family: 'Economica', sans-serif;
 }
 
 div {
 	border: solid 1px black;
+}
+
+footer {
+	background-color: #213d4c;
+}
+
+.content {
+	width: 60rem;
+	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 .hero {
@@ -448,14 +467,28 @@ div {
 }
 
 .introduction {
-	width: 60%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-.industries {
-	width: 40%;
+.examples {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
-.main-content {
-
+.column {
+	width: 49%;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
 }
 
+.footer-content p {
+	text-align: center;
+}
+
+.footer-content li {
+	display: inline-block;
+	padding-right: 1em;
+	padding-left: 1em;
+}
