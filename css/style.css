@@ -440,8 +440,9 @@ html {
 body {
 	background-color: #c8c2bc;
 	-webkit-font-smoothing: antialiased;
-
 	font-family: 'Economica', sans-serif;
+	font-size: 16px;
+	color: #213d4c;
 }
 
 div {
@@ -450,6 +451,17 @@ div {
 
 footer {
 	background-color: #213d4c;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	background-color: #213d4c;
+}
+
+nav h1,
+footer .footer-content {
+	color: #c8c2bc;
 }
 
 .content {
@@ -466,6 +478,11 @@ footer {
 	background-position: center bottom;
 }
 
+.hero .content {
+	height: 300px;
+	padding-top: 150px;
+}
+
 .introduction {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -476,19 +493,28 @@ footer {
 	margin-bottom: 2rem;
 }
 
+.examples p {
+	margin-top: 1px;
+}
+
 .column {
 	width: 49%;
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: top;
+	padding-right: 2em;
 }
 
-.footer-content p {
+.footer-content {
 	text-align: center;
 }
 
+/*
+.footer-content ul {
+	display: block;
+	box-sizing: border-box;
+}*/
+
 .footer-content li {
 	display: inline-block;
-	padding-right: 1em;
-	padding-left: 1em;
 }
